@@ -9,4 +9,13 @@ class BankAccount:
     def __str__(self):
         return "This is a Bank Account class"
 
+    #Creates a getter and setter for the owner attribute
+    @property
+    def owner(self):
+        return self._owner
+
+    @owner.setter
+    def owner(self, owner):
+        self._owner = owner
+
     
