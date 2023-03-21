@@ -29,6 +29,14 @@ class CheckingAccount(BankAccount):
     def transaction_fee(self, transaction_fee):
         self._transaction_fee = transaction_fee
 
+    #Creates a getter and setter methods  for the amount attribute
+    @property 
+    def amount(self):
+        return self._amount
+
+    @amount.setter
+    def amount(self):
+        self._amount = amount
 
 
 def main():
