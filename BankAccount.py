@@ -29,10 +29,16 @@ class BankAccount(ABC):
 
     #Creates an abstract method called deposit
     @abstractmethod
-    def deposit():
+    def deposit(self):
         pass
 
+    #Creates an abstract method called withdraw
+@abstractmethod
+def withdraw(self):
+    pass
+
 def main():
+    print("Checking if the abstract class works successfully")
 
 if __name__ == "__main__":
     main()
