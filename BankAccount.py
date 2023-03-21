@@ -1,5 +1,5 @@
-
-class BankAccount:
+from abc import ABC, abstractmethod
+class BankAccount(ABC):
     #Creates an initialization method
     def __init__(self, owner=None, balance=None):
         self.owner = owner
@@ -27,4 +27,13 @@ class BankAccount:
     def balance(self, balance):
         self._balance = balance
 
-    
+    #Creates an abstract method called deposit
+    @abstractmethod
+    def deposit():
+        pass
+
+def main():
+
+if __name__ == "__main__":
+    main()
+   
