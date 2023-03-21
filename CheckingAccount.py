@@ -20,6 +20,15 @@ class CheckingAccount(BankAccount):
         self.amount = amount
         self.balance = self.balance + self.amount
 
+    #Creates a setter and getter for the transaction fee
+    @property
+    def transaction_fee(self):
+        return self._transaction_fee
+
+    @transaction_fee.setter
+    def transaction_fee(self, transaction_fee):
+        self._transaction_fee = transaction_fee
+
 
 
 def main():
@@ -38,7 +47,6 @@ def main():
 
     checkingAccount.deposit(50)
     print(f"Current Balance: ${checkingAccount.balance}")
-
 
 
 if __name__ == "__main__":
