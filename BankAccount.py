@@ -38,7 +38,7 @@ def withdraw(self):
     pass
 
 def main():
-    print("Checking if the abstract class works successfully")
+    pass
 
 if __name__ == "__main__":
     main()
