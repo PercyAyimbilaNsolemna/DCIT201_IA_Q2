@@ -18,4 +18,13 @@ class BankAccount:
     def owner(self, owner):
         self._owner = owner
 
+    #Creates a getter and setter methods for the balance attribute
+    @property 
+    def balance(self):
+        return self._balance
+
+    @balance.setter
+    def balance(self, balance):
+        self._balance = balance
+
     
