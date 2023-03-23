@@ -32,7 +32,15 @@ class SavingsAccount(BankAccount):
     def amount(self, amount):
         self._amount = amount
 
-    
+    #Creates a getter and setter for the difference attribute
+    @property
+    def difference(self):
+    return self._difference
+
+    @difference.setter
+    def difference(self, difference):
+        self._difference = difference
+
 def main():
     savingsAccount = SavingsAccount()
     print(savingsAccount)
