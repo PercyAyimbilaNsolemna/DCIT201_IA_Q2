@@ -35,7 +35,7 @@ class SavingsAccount(BankAccount):
     #Creates a getter and setter for the difference attribute
     @property
     def difference(self):
-    return self._difference
+        return self._difference
 
     @difference.setter
     def difference(self, difference):
@@ -45,6 +45,8 @@ def main():
     savingsAccount = SavingsAccount()
     print(savingsAccount)
 
+    savingsAccount.owner = "Sabastian Abelezele"
+    print(f"Owner: {savingsAccount.owner}")
 
 if __name__ == "__main__":
     main()
