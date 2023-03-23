@@ -57,5 +57,9 @@ def main():
     savingsAccount.deposit(3000)
     print(f"Dear customer you have deposited an amount of ${savingsAccount.amount}. Your current balance is {savingsAccount.balance}")
 
+    #This test tries to check if the account user tries to withdraw an amount more than the amount in his account
+    savingsAccount.withdraw(10000)
+    print(savingsAccount.balance)
+
 if __name__ == "__main__":
     main()
