@@ -48,5 +48,10 @@ def main():
     savingsAccount.owner = "Sabastian Abelezele"
     print(f"Owner: {savingsAccount.owner}")
 
+    savingsAccount.balance = 5000
+    print(f"Balance: ${savingsAccount.balance}")
+
+    
+
 if __name__ == "__main__":
     main()
