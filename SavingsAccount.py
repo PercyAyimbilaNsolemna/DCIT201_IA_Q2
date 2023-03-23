@@ -24,4 +24,9 @@ class SavingsAccount(BankAccount):
         self.balance = self.balance + self.amount
 
     
-def main()
+def main():
+    savingsAccount = SavingsAccount()
+    print(savingsAccount)
+
+if __name__ == "__main__":
+    main()
