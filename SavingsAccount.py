@@ -51,7 +51,8 @@ def main():
     savingsAccount.balance = 5000
     print(f"Balance: ${savingsAccount.balance}")
 
-    
+    savingsAccount.withdraw(1000)
+    print(f"Dear customer you have withdrawn an amount of ${savingsAccount.amount}. Your current balance is {savingsAccount.balance}")
 
 if __name__ == "__main__":
     main()
