@@ -23,10 +23,20 @@ class SavingsAccount(BankAccount):
         self.amount = amount
         self.balance = self.balance + self.amount
 
+    #Creates a getter and setter for the amount attribute
+    @property
+    def amount(self):
+        return self._amount
+    
+    @amount.setter
+    def amount(self, amount):
+        self._amount = amount
+
     
 def main():
     savingsAccount = SavingsAccount()
     print(savingsAccount)
+
 
 if __name__ == "__main__":
     main()
