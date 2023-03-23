@@ -17,5 +17,11 @@ class SavingsAccount(BankAccount):
             self.balance = self.difference
         else:
             raise ValueError("Dear customer you have insufficient balance to complete this transacion")
+
+    #Creates an implementation for the deposit abstract method in the BankAccount class
+    def deposit(self, amount):
+        self.amount = amount
+        self.balance = self.balance + self.amount
+
     
     
