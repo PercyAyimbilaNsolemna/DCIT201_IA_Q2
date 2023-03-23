@@ -35,7 +35,7 @@ class CheckingAccount(BankAccount):
         return self._amount
 
     @amount.setter
-    def amount(self):
+    def amount(self, amount):
         self._amount = amount
 
 
